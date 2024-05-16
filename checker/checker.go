@@ -63,8 +63,12 @@ func main() {
 					log.Fatal("Error write file: ", err)
 				}
 			}
+		} else {
+			fmt.Println("No any exist domain ..")
 		}
 		fmt.Println("Complete checking task")
+		var nothing string
+		fmt.Scanln(&nothing)
 	}
 }
 
